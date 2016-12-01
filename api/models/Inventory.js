@@ -9,6 +9,19 @@ module.exports = {
 
   attributes: {
 
+    title: {
+      type: 'string',
+      defaultsTo: ''
+    },
+
+    description: {
+      type: 'string'
+    },
+
+    template: {
+      model: 'template'   
+    },
+
     lines: {
       collection: 'line',
       via: 'inventory'
