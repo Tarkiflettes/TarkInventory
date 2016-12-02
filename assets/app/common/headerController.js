@@ -1,5 +1,5 @@
 
-ntroller = agendaIUTLaval.controller("HeaderController", function($scope) {
+var headerController = tarkinventory.controller("HeaderController", function($scope) {
 
   var vm = this;
 

@@ -17,7 +17,11 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
-  'styles/**/*.css'
+  'styles/**/*.css',
+  'bower_components/angular-material/angular-material.min.css',
+  'bower_components/fullcalendar/dist/fullcalendar.css',
+  'bower_components/angular-material-icons/angular-material-icons.css',
+  'bower_components/angular-material-sidemenu/dest/angular-material-sidemenu.css'
 ];
 
 
@@ -30,7 +34,17 @@ var jsFilesToInject = [
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
+  'bower_components/angular/angular.min.js',
+  'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+  'bower_components/angular-animate/angular-animate.min.js',
+  'bower_components/angular-aria/angular-aria.min.js',
+  'bower_components/angular-messages/angular-messages.min.js',
+  'bower_components/angular-material/angular-material.min.js',
+  'bower_components/angular-material-icons/angular-material-icons.min.js', 
+  'bower_components/angular-material-sidemenu/dest/angular-material-sidemenu.js',
 
+  'app/*.js',
+  'app/**/*.js',
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
   'js/**/*.js'

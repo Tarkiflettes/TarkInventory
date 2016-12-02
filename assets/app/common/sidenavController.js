@@ -1,4 +1,4 @@
-var sidenavController = agendaIUTLaval.controller("SidenavController", function($scope, $http) {
+var sidenavController = tarkinventory.controller("SidenavController", function($scope, $http) {
 
   var vm = this;
 

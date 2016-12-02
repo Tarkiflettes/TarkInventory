@@ -1,7 +1,6 @@
 var tarkinventory = angular.module("TarkInventory", 
     [
     'ui.router', 
-    'ui.calendar', 
     'ngAnimate',
     'ngAria',
     'ngMessages',
