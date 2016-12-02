@@ -49,7 +49,7 @@ tarkinventory.config(
         controller: 'HomeController',
         controllerAs: 'home',
       })
-      state('root.inventory', {
+      .state('root.inventory', {
         url: '/:inventory',
         templateUrl: 'app/inventory/inventoryView.html',
         controller: 'InventoryController',

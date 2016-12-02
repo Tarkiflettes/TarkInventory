@@ -1,8 +1,10 @@
-var inventoryController = tarkinventory.controller("InventoryController", function($scope, $rootScope) {
+var inventoryController = tarkinventory.controller("InventoryController", function($scope, $rootScope, $http) {
 
   var vm = this;
 
-  $rootScope.title = "À propos - Agenda - IUT Laval";
-  $rootScope.subTitle = "À propos";
+
+
+  $rootScope.title = "";
+  $rootScope.subTitle = "";
 
 })

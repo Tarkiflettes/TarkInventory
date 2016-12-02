@@ -2,7 +2,10 @@ var sidenavController = tarkinventory.controller("SidenavController", function($
 
   var vm = this;
 
-  vm.department = [];
-  vm.grade = []; 
+  $http.get("/api/inventory", {params: {"limit": 1000}}).success(function(data){
+
+    vm.inventories = data;
+  
+  });
 
 });

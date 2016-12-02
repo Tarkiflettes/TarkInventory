@@ -1,3 +1,15 @@
-<md-content layout-padding>
-  <span class="md-headline" ng-bind="home.title">Action buttons</span>
+<md-content ng-repeat="tem in home.templates" layout-padding>
+
+  <md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">{{ tem.title }}</span>
+        <span class="md-subhead">{{ tem.description }}</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="end center">
+      <md-button ui-sref="root.inventory({inventory: tem.id})">Utiliser</md-button>
+    </md-card-actions>
+  </md-card>
+
 </md-content>

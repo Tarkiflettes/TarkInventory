@@ -1,7 +1,7 @@
 <md-sidemenu>
 
-  <md-sidemenu-group>
-    <md-sidemenu-button>{{ dp.name }}</md-sidemenu-button>
+  <md-sidemenu-group ng-repeat="inv in sidenav.inventories">
+    <md-sidemenu-button ui-sref="root.inventory({inventory: inv.id})">{{ inv.title }}</md-sidemenu-button>
   </md-sidemenu-group>
 
 </md-sidemenu>
